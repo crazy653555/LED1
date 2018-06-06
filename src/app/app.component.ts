@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs';
 import { AngularFirestore, AngularFirestoreDocument } from 'angularfire2/firestore';
+import { async } from '@angular/core/testing';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,7 @@ export class AppComponent {
   constructor(private afs: AngularFirestore) {
     this.itemDoc = afs.doc<any>('items/item');
     this.item = this.itemDoc.valueChanges();
+    console.log(this.item);
   }
 
   changeText() {

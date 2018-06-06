@@ -3,7 +3,8 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  {{item$ | async | json}} {{item | async | json}}
+  {{item$ | async | json}}
+  <br> {{item | async | json}}
+  <br> {{(item|async)?.controll | json}}
   <br>
-
   <button (click)="changeText()">顯示文字</button>
