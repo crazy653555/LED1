@@ -16,8 +16,8 @@
 }
 
 .led {
-  /* background-image: url("/assets/imgs/circle45s.png");
-  background-repeat: repeat; */
+  background-image: url("/assets/imgs/circle45.png");
+  background-repeat: repeat;
   background-size: 40%;
   z-index: 1;
   position: fixed;
