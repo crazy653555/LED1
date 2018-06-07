@@ -1,9 +1,10 @@
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  {{item$ | async | json}}
-  <br> {{item | async | json}}
-  <br> {{(item|async)?.controll | json}}
-  <br>
-  <button *ngIf="controll == false" (click)="changeText()">顯示警報</button>
-  <button *ngIf="controll" (click)="changeText()">關閉警報</button>
+
+<!-- <br> {{item | async | json}}
+<br> {{(item|async)?.controll | json}} -->
+
+<br>
+<br>
+<div class="container">
+  <button class="btn btn-danger btn-lg btn-block" *ngIf="controll == false" (click)="changeText()">顯示警報</button>
+  <button class="btn btn-primary btn-lg btn-block" *ngIf="controll" (click)="changeText()">關閉警報</button>
+</div>

@@ -24,6 +24,8 @@ export class SecondComponent implements OnInit {
   setFontSize = '20em';
   setScrollAmount = '30';
 
+  setText1 = 'Temperature: 33∘C Current Speed: 60km';
+  setText2 = 'Emergency Alert!';
 
   constructor(private afs: AngularFirestore) {
     this.itemDoc = afs.doc<any>('items/item');

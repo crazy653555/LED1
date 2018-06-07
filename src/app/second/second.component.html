@@ -2,10 +2,9 @@
   <div class="led"></div>
   <div id="ledfont">
     <div id="cell">
-      <marquee *ngIf="(item|async)?.controll == false" id="led_marquee" [ngStyle]="{color: setColor,fontSize:setFontSize}" [scrollAmount]="setScrollAmount">Temperature: ? ∘C
-        Current Speed: ? km/</marquee>
+      <marquee *ngIf="(item|async)?.controll == false" id="led_marquee" [ngStyle]="{color: setColor,fontSize:setFontSize}" [scrollAmount]="setScrollAmount">{{setText1}}</marquee>
 
-      <marquee *ngIf="(item|async)?.controll == true" id="led_marquee" [ngStyle]="{color: setColor,fontSize:setFontSize}" [scrollAmount]="setScrollAmount">Emergency Alert!</marquee>
+      <marquee *ngIf="(item|async)?.controll == true" id="led_marquee" [ngStyle]="{color: setColor,fontSize:setFontSize}" [scrollAmount]="setScrollAmount">{{setText2}}</marquee>
     </div>
   </div>
 </div>

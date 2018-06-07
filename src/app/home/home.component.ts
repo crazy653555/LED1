@@ -12,27 +12,18 @@ import {
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  item$: Observable<any[]>;
-  title = 'app';
-  menusHandler: any;
   private itemDoc: AngularFirestoreDocument<any>;
   item: Observable<any>;
   controll = false;
-  aaa: any;
-  // constructor(private _db: AngularFireDatabase) {
-  // this.item$ = _db.list('item').valueChanges();
-  // }
+
 
   ngOnInit(): void { }
+
 
   constructor(private afs: AngularFirestore) {
     this.itemDoc = afs.doc<any>('items/item');
     this.item = this.itemDoc.valueChanges();
-    console.log('get controll = ' + this.item);
-    this.itemDoc.update({ 'controll': this.controll });
-
-    this.aaa = this.item.subscribe();
-    console.log(this.aaa);
+    this.itemDoc.update({ 'controll': this.controll }); // 初始化
   }
 
   changeText() {
