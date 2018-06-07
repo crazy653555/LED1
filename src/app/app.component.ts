@@ -10,25 +10,5 @@ import { async } from '@angular/core/testing';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  menusHandler: any;
 
-  item$: Observable<any[]>;
-  //constructor(private _db: AngularFireDatabase) {
-  //this.item$ = _db.list('item').valueChanges();
-  //}
-
-  private itemDoc: AngularFirestoreDocument<any>;
-  item: Observable<any>;
-
-  constructor(private afs: AngularFirestore) {
-    this.itemDoc = afs.doc<any>('items/item');
-    this.item = this.itemDoc.valueChanges();
-    console.log(this.item);
-  }
-
-  changeText() {
-    console.log('aa');
-    this.itemDoc.update({ '1': false });
-  }
 }

@@ -1,10 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  {{item$ | async | json}}
-  <br> {{item | async | json}}
-  <br> {{(item|async)?.controll | json}}
-  <br>
-  <button (click)="changeText()">顯示文字</button>
+
+
+  <!-- <ul>
+    <li><a [routerLink]="['/home']">Home</a></li>
+    <li><a [routerLink]="['/second']">Second</a></li>
+  </ul>
+  <hr> -->
+
+  <router-outlet></router-outlet>

@@ -1,0 +1,35 @@
+.body {
+  background-color: #3b3b3b;
+  /* background-color:#ffffff; */
+  height: 100%;
+}
+
+.ledfont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-weight: bold;
+  display: table;
+  font-family: PMingLiU;
+}
+
+.led {
+  background-image: url("/assets/imgs/circle45s.png");
+  background-repeat: repeat;
+  background-size: 40%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+#cell{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
