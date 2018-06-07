@@ -5,4 +5,5 @@
   <br> {{item | async | json}}
   <br> {{(item|async)?.controll | json}}
   <br>
-  <button (click)="changeText()">顯示文字</button>
+  <button *ngIf="controll == false" (click)="changeText()">顯示警報</button>
+  <button *ngIf="controll" (click)="changeText()">關閉警報</button>
