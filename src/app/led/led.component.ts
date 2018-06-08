@@ -42,9 +42,9 @@ export class LedComponent implements OnInit {
         this.aryPara.push(this.getPara[i].split('=')[1]);
       }
 
-      this.setColor = this.aryPara[0]; // 字體顏色
-      this.setFontSize = this.aryPara[1]; // 字體大小
-      this.setScrollAmount = this.aryPara[2]; // 捲動速度
+      this.setColor = decodeURI(this.aryPara[0]); // 字體顏色
+      this.setFontSize = decodeURI(this.aryPara[1]); // 字體大小
+      this.setScrollAmount = decodeURI(this.aryPara[2]); // 捲動速度
       this.setText = decodeURI(this.aryPara[3]); // 文字
     }
   }
