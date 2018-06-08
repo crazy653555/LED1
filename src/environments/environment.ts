@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyBcUP_WVgkGfsYsaazXFnv0scpYzJPGhsU',
-    authDomain: 'ledrun-49733.firebaseapp.com',
-    databaseURL: 'https://ledrun-49733.firebaseio.com',
-    projectId: 'ledrun-49733',
-    storageBucket: 'ledrun-49733.appspot.com',
-    messagingSenderId: '91550339954'
+    apiKey: "AIzaSyCwTM4rO1cDTjGNefe6ZAWloylYgbuVGLU",
+    authDomain: "ledrun-2ce50.firebaseapp.com",
+    databaseURL: "https://ledrun-2ce50.firebaseio.com",
+    projectId: "ledrun-2ce50",
+    storageBucket: "ledrun-2ce50.appspot.com",
+    messagingSenderId: "115194371552"
   }
 };
 

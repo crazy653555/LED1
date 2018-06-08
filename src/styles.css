@@ -1,11 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-@import url(//fonts.googleapis.com/earlyaccess/hannari.css);
 
+@import url(//fonts.googleapis.com/earlyaccess/hannari.css);
 * {
   margin: 0px;
   padding: 0px;
 }
 
-html{
+html,
+body,
+.ng-scope {
   height: 100%;
 }
+
+/* html, body, .ng-scope {
+  height: 100%;
+} */

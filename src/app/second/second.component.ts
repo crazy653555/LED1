@@ -24,11 +24,11 @@ export class SecondComponent implements OnInit {
   setFontSize = '20em';
   setScrollAmount = '30';
 
-  setText1 = 'Temperature: 33∘C Current Speed: 60km';
+  setText1 = 'Temperature: 33℃    Current Speed: 60km';
   setText2 = 'Emergency Alert!';
 
   constructor(private afs: AngularFirestore) {
-    this.itemDoc = afs.doc<any>('items/item');
+    this.itemDoc = afs.doc<any>('led/items');
     this.item = this.itemDoc.valueChanges();
 
   }

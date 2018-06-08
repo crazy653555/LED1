@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
 
 
   constructor(private afs: AngularFirestore) {
-    this.itemDoc = afs.doc<any>('items/item');
+    this.itemDoc = afs.doc<any>('led/items');
     this.item = this.itemDoc.valueChanges();
     this.itemDoc.update({ 'controll': this.controll }); // 初始化
   }
@@ -32,6 +32,6 @@ export class HomeComponent implements OnInit {
     } else {
       this.controll = true;
     }
-    this.itemDoc.update({ 'controll': this.controll });
+    this.itemDoc.update({ 'controller': this.controll });
   }
 }

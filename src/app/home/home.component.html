@@ -1,10 +1,17 @@
-
-<!-- <br> {{item | async | json}}
+<!--
+<br> {{item | async | json}}
 <br> {{(item|async)?.controll | json}} -->
 
-<br>
-<br>
+
 <div class="container">
-  <button class="btn btn-danger btn-lg btn-block" *ngIf="controll == false" (click)="changeText()">顯示警報</button>
+  <br>
+  <br>
+  <button class="btn btn-danger btn-lg btn-block"  *ngIf="controll == false" (click)="changeText()">顯示警報</button>
   <button class="btn btn-primary btn-lg btn-block" *ngIf="controll" (click)="changeText()">關閉警報</button>
+  <br>
+  <br>
+  <div class="text-center">
+    <a [routerLink]="['/second']">LED頁面</a>
+  </div>
+  <br>
 </div>
