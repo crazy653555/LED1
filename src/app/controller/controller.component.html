@@ -1,0 +1,11 @@
+<!--
+<br> {{item | async | json}}
+<br> {{(item|async)?.controll | json}} -->
+
+
+<div class="container">
+    <br>
+    <br>
+    <button class="btn btn-danger btn-lg btn-block"  *ngIf="controller == false" (click)="changeText()">顯示警報</button>
+    <button class="btn btn-primary btn-lg btn-block" *ngIf="controller" (click)="changeText()">關閉警報</button>
+  </div>

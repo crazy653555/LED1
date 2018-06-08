@@ -11,12 +11,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SecondComponent } from './second/second.component';
+import { ControllerComponent } from './controller/controller.component';
+import { LedComponent } from './led/led.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SecondComponent,
+    ControllerComponent,
+    LedComponent,
   ],
   imports: [
     BrowserModule,
