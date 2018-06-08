@@ -20,6 +20,7 @@ export class LedComponent implements OnInit {
   setText =
     '輸入方式:?color=#ff0000&fontsize=20em&scrollAmount=20&text=跑馬燈內容';
   setColor = '#ff0000';
+  setAlertColor = '#ff0000'
   setFontSize = '20em';
   setScrollAmount = '30';
 
